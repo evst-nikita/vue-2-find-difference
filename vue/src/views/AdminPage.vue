@@ -108,10 +108,6 @@ import { uid } from '@/utils/id'
 
 export default {
   name: 'AdminPage',
-  components: {
-  },
-  props: {
-  },
   data() {
     return {
       form: {
@@ -128,10 +124,6 @@ export default {
       imgNatural: { w: 0, h: 0 },
       imgBox: { width: 0, height: 0 }
     }
-  },
-  computed: {
-  },
-  watch: {
   },
   methods: {
     onFileChange(e, field) {
@@ -245,14 +237,10 @@ export default {
       this.form.spots.splice(i, 1)
     }
   },
-  mounted() {
-  },
-  destroyed() {
-  }
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .admin-page {
   max-width: 900px;
   margin: 0 auto;

@@ -38,30 +38,18 @@ import { getLevels } from '@/utils/storage'
 
 export default {
   name: 'LevelsPage',
-  components: {
-  },
-  props: {
-  },
   data() {
     return {
       levels: []
     }
   },
-  computed: {
-  },
-  watch: {
-  },
-  methods: {
-  },
   mounted() {
     this.levels = getLevels()
-  },
-  destroyed() {
   }
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .levels-page {
   padding: 16px;
 }

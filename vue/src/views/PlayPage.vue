@@ -72,8 +72,6 @@ import { getLevel } from '@/utils/storage'
 
 export default {
   name: 'PlayPage',
-  components: {
-  },
   props: {
     levelId: {
       type: String,
@@ -88,10 +86,6 @@ export default {
       found: [],
       win: false
     }
-  },
-  computed: {
-  },
-  watch: {
   },
   methods: {
     onImgLoad() {
@@ -142,13 +136,11 @@ export default {
   },
   mounted() {
     this.level = getLevel(this.levelId)
-  },
-  destroyed() {
   }
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .play-page {
   padding: 16px;
 }
